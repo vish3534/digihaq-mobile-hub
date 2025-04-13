@@ -65,10 +65,11 @@ export default {
 				},
 				// DigiHaq brand colors (PayPal theme)
 				digihaq: {
-					primary: '#9b87f5',
-					secondary: '#7E69AB',
-					tertiary: '#6E59A5',
-					light: '#D6BCFA',
+					primary: '#003087',    // Dark Blue
+					secondary: '#009cde',  // Cerulean
+					tertiary: '#012169',   // Midnight Blue
+					light: '#e1f0fa',      // Light Blue
+					accent: '#f5f8fa',     // Lightest Blue
 				}
 			},
 			borderRadius: {

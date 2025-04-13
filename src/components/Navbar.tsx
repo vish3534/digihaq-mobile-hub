@@ -30,6 +30,9 @@ const Navbar = () => {
             <Link to="/help-center" className="text-gray-700 hover:text-digihaq-primary font-medium">
               Help Center
             </Link>
+            <Link to="/privacy" className="text-gray-700 hover:text-digihaq-primary font-medium">
+              Privacy Policy
+            </Link>
             <Link to="/contact" className="text-gray-700 hover:text-digihaq-primary font-medium">
               Contact
             </Link>
@@ -77,6 +80,13 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             Help Center
+          </Link>
+          <Link 
+            to="/privacy" 
+            className="text-lg font-medium p-2 text-gray-700 hover:text-digihaq-primary hover:bg-gray-50 rounded-md"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Privacy Policy
           </Link>
           <Link 
             to="/contact" 
