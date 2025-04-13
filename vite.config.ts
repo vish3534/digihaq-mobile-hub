@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/digihaq-mobile-hub/', // ✅ REQUIRED for GitHub Pages
+  base: './', // <--- Important fix for custom domain
   server: {
     host: "::",
     port: 8080,
