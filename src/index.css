@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 255 80% 75%;
+    --primary: 215 100% 26%;   /* #003087 Dark Blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 255 40% 54%;
+    --secondary: 199 100% 44%;  /* #009cde Cerulean */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 263 63% 91%;
+    --accent: 210 100% 97%;    /* Light version of brand colors */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 255 80% 75%;
+    --ring: 215 100% 26%;      /* #003087 Dark Blue */
 
     --radius: 0.5rem;
 
@@ -57,11 +57,11 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 255 80% 75%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 215 100% 26%;   /* #003087 Dark Blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 199 100% 44%;  /* #009cde Cerulean */
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -107,11 +107,11 @@
 }
 
 .btn-primary {
-  @apply bg-digihaq-primary text-white hover:bg-digihaq-secondary;
+  @apply bg-digihaq-primary text-white hover:bg-digihaq-tertiary;
 }
 
 .btn-secondary {
-  @apply bg-digihaq-secondary text-white hover:bg-digihaq-tertiary;
+  @apply bg-digihaq-secondary text-white hover:bg-digihaq-primary;
 }
 
 .section {
@@ -128,4 +128,8 @@
 
 .card {
   @apply bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg;
+}
+
+.support-card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg border-t-4 border-digihaq-secondary hover:border-digihaq-primary;
 }
